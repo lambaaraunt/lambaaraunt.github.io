@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: #f9d8d8;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+}
+
+.flexbox {
+    display: flex;
+
+    padding: 2em;
+}
+.flexbox img {
+    width: 100%;
+}
+
+p {
+    color: white;
+}
+
+#picture-me {
+    display: flex;
+}
+#picture-me img {
+    width: 100%;
+}
+#about-me {
+    display: flex;
+}
+#about-me p {
+    color: black;
+}
+#twitter-error-page {
+    display: flex;
+}
+#twitter-error-page img {
+    width: 100%;
+}
+#twitter-blurb {
+    display: flex;
+
+    background-color: #f7b2b2;
+    align-items: center;
+    color: white;
+    padding: 1em;
+}
+#magazine-cover {
+    display: flex;
+}
+#magazine-cover img {
+    width: 100%;
+}
+#magazine-blurb {
+    display: flex;
+
+    background-color: #f7b2b2;
+    align-items: center;
+    padding: 1em;
+}
+#sewol-ferry {
+    display: flex;
+}
+#sewol-ferry img {
+    width: 100%;
+}
+#ferry-blurb {
+    display: flex;
+
+    background-color: #f7b2b2;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Desktop View */
+@media only screen and (min-width: 769px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 1em;
+
+        padding: 1em;
+        margin: 1em;
+        text-align: justify;
+        font-size: 1.5em;
+    }
+    #picture-me {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #about-me {     
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #twitter-error-page {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #twitter-blurb {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    #magazine-cover {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    #magazine-blurb {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #sewol-ferry {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    #ferry-blurb {
+        grid-row: 3;
+        grid-column: 2;
+    }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1em;
+
+        padding: 1em;
+        margin: 1em;
+        text-align: justify;
+        font-size: 1.5em;
+    }
+    #picture-me {
+        grid-row: 1;
+    }
+    #about-me {       
+        grid-row: 2;
+    }
+    #twitter-error-page {
+        grid-row: 1;
+    }
+    #twitter-blurb {
+        grid-row: 2;
+    }
+    #magazine-cover {
+        grid-row: 3;
+    }
+    #magazine-blurb {
+        grid-row: 4;
+    }
+    #sewol-ferry {
+        grid-row: 5;
+    }
+    #ferry-blurb {
+        grid-row: 6;
+    }
+}
