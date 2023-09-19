@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--you can also make an external style sheet; see week4_2.css-->
+    <link rel="stylesheet" href="week4_2.css" />
+
+    <!--this is a style element. DO this for a website with not many pages-->
+    <style>
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--this is inline styling. do NOT do this-->
+    <p style="color: red">this is a p tag</p>
+    <p>this is a second p element</p>
+
+    <!--this is .test-class from the css file-->
+    <!--classes are more specific than changing elements, so this overrides the changes to p on the css file-->
+    <!--less specific to more specific goes element > class > id-->
+    <h1 class="test-class">Hello World!</h1>
+    <!--ids are more specific than classes, so this is still green even with the class-->
+    <p id="test-id" class="test-class">this is a p tag with a test id</p>
+    <p class="test-class">this is a p element with a test class</p>
+  </body>
+</html>

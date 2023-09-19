@@ -1,0 +1,27 @@
+/*
+this is an external style sheet for week4.html
+any changes or edits made on this directly affect week4.html
+you would use external for a website with many pages; you would want all the pages to look the same
+*/
+
+p {
+    color: red;
+}
+
+/*
+do not add separate rules for everything; you want to only ever define a single rule
+if there are 2 rules that conflict for whatever reason, we apply the one that appears last (ie the one more to the bottom)
+*/
+
+/*any element that has .test-class as a class will have the purple type color*/
+/*the '.' before the class name denotes that it is a class, not an element*/
+.test-class {
+    color: purple;
+}
+
+/*the '#' in front of the name denotes this is an id, not an element or class*/
+/**/
+#test-id {
+    font-size: 100px;
+    color: green;
+}
