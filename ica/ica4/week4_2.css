@@ -15,7 +15,9 @@ if there are 2 rules that conflict for whatever reason, we apply the one that ap
 
 /*any element that has .test-class as a class will have the purple type color*/
 /*the '.' before the class name denotes that it is a class, not an element*/
-.test-class {
+.test-class,
+
+.test-class-2 {
     color: purple;
 }
 
