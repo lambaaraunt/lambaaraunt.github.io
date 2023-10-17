@@ -20,3 +20,21 @@
         background-color: purple;
     }
 }
+
+@media screen and(min-width: 800px) {
+    #widescreen {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #shortscreen {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    #tallscreen {
+        background-color: orange;
+    }
+}
